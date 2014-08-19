@@ -1,4 +1,2 @@
   <footer><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Copyright &copy; {{ 'now' | date: "%Y" }}</a> Cameron Tracy</footer>
-  {% assign copyYear = '2013' %}
-  {% assign curYear = 'now' | date: "%Y" %}
-  {% if copyYear != curYear %}{{ copyYear }}-{{ curYear }}{% else %}{{ copyYear }}{% endif %}
+{% assign copyYear = '2014' %}{% assign curYear = 'now' | date: "%Y" %}{% if copyYear != curYear %}{{ copyYear }}-{{ curYear }}{% else %}{{ copyYear }}{% endif %}
