@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title>{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-  {{ content }}
+  <header><a href="/">{{ site.title }}</a></header>
+  <nav>
+    <ul class="navigation">
+      <li id="archive"><a href="/archive/">Archive</a></li>
+      <li id="projects"><a href="#">Projects</a></li>
+      <li id="colophon"><a href="#">Colophon</a></li>
+      <li id="rss"><a href="#">RSS</a></li>
+    </ul>
+  </nav>
+  <h1>I&#8217;m sorry, Dave. I&#8217;m afraid I can&#8217;t do that.</h1>
+{{ content }}
+  <footer><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Copyright &copy; 2014</a> Cameron Tracy</footer>
 </body>
 </html>
