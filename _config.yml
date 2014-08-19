@@ -1,1 +1,7 @@
-permalink: /:year/:month/:day/:title
+# Site settings
+title: Morning Pulp
+url: http://morningpulp.com
+
+# Build settings
+markdown: redcarpet
+permalink: pretty

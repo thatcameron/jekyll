@@ -1,0 +1,11 @@
+---
+layout: mp
+title: Morning Pulp
+---
+<header>{{ page.title }}</header>
+<section class="content">
+  {% for post in site.posts %}<article>
+    <h2><a href="{{ post_url }}">{{ post.title }}</a></h2>
+    <p>{{ post.date | date_to_string }}</p>
+    {{ post.content }}  </article>{% endfor %}
+</section>
