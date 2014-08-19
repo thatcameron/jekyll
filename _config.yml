@@ -3,5 +3,6 @@ title: Morning Pulp
 url: http://morningpulp.com
 
 # Build settings
+baseurl: /jekyll
 markdown: redcarpet
 permalink: pretty
