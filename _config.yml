@@ -5,4 +5,4 @@ url: http://morningpulp.com
 # Build settings
 markdown: redcarpet
 permalink: pretty
-baseurl: http://morningpulp.com/jekyll
+baseurl: /jekyll
