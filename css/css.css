@@ -36,15 +36,15 @@ h1 {
 
 h2 {
   margin: 50px 0 0 0;
-}
-
-h2 a {
-  color: #535d69;
   font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.9em;
   font-weight: normal;
   letter-spacing: .05em;
   line-height: 100%;
+}
+
+h2 a {
+  color: #535d69;
 }
 
 /* BEGIN HEADER */
