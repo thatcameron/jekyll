@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Morning Pulp</title>
+		<description>Wake up in the morning.</description>
+		<link>http://morningpulp.com/</link>
+		<atom:link href="http://morningpulp.com//jekyll/feed4.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Fifth Post</title>
+				<author>Morning Pulp Treasury Department</author>
+				<description>&lt;p&gt;This is the fifth post.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 19 Aug 2014 19:24:49 -0700</pubDate>
+				<link>http://morningpulp.com//jekyll/2014/08/19/fifth-post/</link>
+				<guid isPermaLink="true">http://morningpulp.com//jekyll/2014/08/19/fifth-post/</guid>
+			</item>
+		
+			<item>
+				<title>Fourth Post</title>
+				<author>Cameron Tracy</author>
+				<description>&lt;p&gt;This is the fourth post.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 19 Aug 2014 03:41:29 -0700</pubDate>
+				<link>http://morningpulp.com//jekyll/2014/08/19/fourth-post/</link>
+				<guid isPermaLink="true">http://morningpulp.com//jekyll/2014/08/19/fourth-post/</guid>
+			</item>
+		
+			<item>
+				<title>Third Post</title>
+				<author>Cameron Tracy</author>
+				<description>&lt;p&gt;This is the third post.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 18 Aug 2014 10:38:27 -0700</pubDate>
+				<link>http://morningpulp.com//jekyll/2014/08/18/third-post/</link>
+				<guid isPermaLink="true">http://morningpulp.com//jekyll/2014/08/18/third-post/</guid>
+			</item>
+		
+			<item>
+				<title>Second Post</title>
+				<author>Cameron Tracy</author>
+				<description>&lt;p&gt;This is the second post.&lt;/p&gt;
+</description>
+				<pubDate>Sun, 17 Aug 2014 15:53:22 -0700</pubDate>
+				<link>http://morningpulp.com//jekyll/2014/08/17/second-post/</link>
+				<guid isPermaLink="true">http://morningpulp.com//jekyll/2014/08/17/second-post/</guid>
+			</item>
+		
+			<item>
+				<title>This is Morning Pulp</title>
+				<author>Cameron Tracy</author>
+				<description>&lt;p&gt;This is the first post.&lt;/p&gt;
+</description>
+				<pubDate>Sat, 16 Aug 2014 12:02:34 -0700</pubDate>
+				<link>http://morningpulp.com//jekyll/2014/08/16/this-is-morning-pulp/</link>
+				<guid isPermaLink="true">http://morningpulp.com//jekyll/2014/08/16/this-is-morning-pulp/</guid>
+			</item>
+		
+	</channel>
+</rss>
