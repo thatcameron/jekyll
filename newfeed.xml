@@ -1,12 +1,13 @@
 ---
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{{ site.title | xml_escape }}</title>
     <link>{{ site.url }}</link>
     <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <copyright>Copyright © 2014 Cameron Tracy</copyright>
+    <copyright>Copyright © {% assign copyYear = '2014' %}{% assign curYear = 'now' | date: "%Y" %}{{ copyYear }}{% if copyYear != curYear %}-{{ curYear }}{% endif %} Cameron Tracy</copyright>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/newfeed.xml" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:10 %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
