@@ -7,7 +7,7 @@
     <link>{{ site.url }}</link>
     <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
     <copyright>Copyright © {% assign copyYear = '2014' %}{% assign curYear = 'now' | date: "%Y" %}{{ copyYear }}{% if copyYear != curYear %}-{{ curYear }}{% endif %} Cameron Tracy</copyright>
-    <atom:link href="{{ site.url }}{{ site.baseurl }}/newfeed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/rss.xml" rel="self" type="application/rss+xml" />
     {% for post in site.posts limit:10 %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
