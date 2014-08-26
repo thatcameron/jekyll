@@ -1,0 +1,21 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+    <link>{{ site.url }}</link>
+    <copyright>Copyright &copy; {% assign copyYear = '2014' %}{% assign curYear = 'now' | date: "%Y" %}{{ copyYear }}{% if copyYear != curYear %}-{{ curYear }}{% endif %} Cameron Tracy</copyright>
+    {% for post in site.posts limit:10 %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <author><name>{{ post.author | xml_escape }}</name></author>
+      <description>{{ post.content | xml_escape }}</description>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+			<guid>{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
