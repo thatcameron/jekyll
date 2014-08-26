@@ -1,9 +1,9 @@
 # Site settings
 title: Morning Pulp
 description: Wake up in the morning.
-url: http://morningpulp.com/
+url: http://morningpulp.com
 
 # Build settings
-baseurl: jekyll
+baseurl: /jekyll
 markdown: redcarpet
 permalink: pretty
