@@ -3,6 +3,6 @@ layout: mp
 title: Morning Pulp
 ---
     {% for post in site.posts %}<article>
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ page.title }}</a></h2>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <time datetime="{{ post.date | date_to_xmlschema }}" pubdate="pubdate">{{ post.date | date_to_string }}</time>
       {{ post.content }}    </article>{% endfor %}
