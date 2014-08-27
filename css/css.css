@@ -136,7 +136,7 @@ footer a {
   }
 
   header {
-    -webkit-order: 0;
+    -webkit-order: 1;
     margin: 30px 0;
   }
 
@@ -158,11 +158,17 @@ footer a {
   }
 
   nav {
-    -webkit-order: 1;
+    -webkit-order: 0;
   }
 
   .navigation {
+    -webkit-justify-content: flex-end;
+    margin-top: 15px;
     height: auto;
+  }
+
+  .navigation a {
+    margin-left: 25px;
   }
 }
 
