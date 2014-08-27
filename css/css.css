@@ -8,7 +8,7 @@ html {
   background-repeat: no-repeat;
   color: #535d69;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  text-rendering: optimizeLegibility;
+  /*text-rendering: optimizeLegibility;*/
   -webkit-text-size-adjust: none;
 }
 
