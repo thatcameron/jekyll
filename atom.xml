@@ -11,11 +11,16 @@
   <entry>
     <title>{{ post.title | xml_escape }}</title>
     <link rel="alternate" type="text/html" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" />
-    <id>{{ site.url }}{{ site.baseurl }}{{ post.url }}</id>
+    <id>tag:morningpulp.com,{{ post.date | date: "%Y-%m-%d" }}:{{ site.baseurl }}{{ post.url }}</id>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <author><name>Cameron Tracy</name></author>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <author>
+      <name>Cameron Tracy</name>
+      <uri>{{ site.url }}</uri>
+    </author>
+    <content>
+      {{ post.content | xml_escape }}
+    </content>
   </entry>
   {% endfor %}
 </feed>
