@@ -13,7 +13,6 @@
     <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
     <id>{ site.url }}{{ site.baseurl }}{{ post.url }}</id>
     <published>{{ post.date | date: “%a, %d %b %Y %H:%M:%S %z” }}</published>
-    <updated>{% if post.modified %}{{ post.modified | date: “%a, %d %b %Y %H:%M:%S %z” }}{% endif %}></updated>
     <author><name>Cameron Tracy</name></author>
     <content>{{ post.content | xml_escape }}</content>
   </entry>
