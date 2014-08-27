@@ -6,7 +6,7 @@
   <link rel="self" type="application/atom+xml" href="{{ site.url }}{{ site.baseurl }}/atom.xml" />
   <id>{{ site.url }}{{ site.baseurl }}/atom.xml</id>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <rights>Copyright © {% assign copyYear = ‘2014’ %}{% assign curYear = ‘now’ | date: “%Y” %}{{ copyYear }}{% if copyYear != curYear %}-{{ curYear }}{% endif %} Cameron Tracy</rights>
+  <rights>Copyright © {% assign copyYear = ‘2014’ %}{% assign curYear = ‘now’ | date: “%Y” %}{{ copyYear }}{% if copyYear != curYear %}-{{ curYear }}{% else %}{% endif %} Cameron Tracy</rights>
   {% for post in site.posts limit:10 %}
   <entry>
     <title>{{ post.title | xml_escape }}</title>
