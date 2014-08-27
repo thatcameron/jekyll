@@ -1,0 +1,20 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title | xml_escape }}</title>
+  <link>{{ site.url }}</link>
+  <id>{{ site.url }}{{ site.baseurl }}/rss.xml</id>
+  <updated></updated>
+  <rights>Copyright © {% assign copyYear = ‘2014’ %}{% assign curYear = ‘now’ | date: “%Y” %}{{ copyYear }}{% if copyYear != curYear %}-{{ curYear }}{% endif %} Cameron Tracy</rights>
+  {% for post in site.posts limit:10 %}
+  <entry>
+    <title>{{ post.title | xml_escape }}</title>
+    <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+    <id>{ site.url }}{{ site.baseurl }}{{ post.url }}</id>
+    <published>{{ post.date | date: “%a, %d %b %Y %H:%M:%S %z” }}</published>
+    <author><name>Cameron Tracy</name></author>
+    <content>{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+</feed>
