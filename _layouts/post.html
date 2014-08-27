@@ -9,7 +9,7 @@
 {% include header.html %}
   <section class="content">
     <article>
-      <h2>{{ page.title }}{{ page.url }}</h2>
+      <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
       <time datetime="{{ page.date | date_to_xmlschema }}" pubdate="pubdate">{{ page.date | date_to_string }}</time>
       {{ content }}    </article>
   </section>
