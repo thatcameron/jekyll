@@ -100,7 +100,7 @@ article {
   line-height: 150%;
 }
 
-article:after {
+article:last-child:after {
   display: block;
   margin: auto;
   width: 20px;
