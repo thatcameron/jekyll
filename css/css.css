@@ -168,6 +168,6 @@ footer a {
 
 @media print {
   html {
-    background-color: #ffffff;
+    background: none;
   }
 }
