@@ -9,7 +9,6 @@
 
 html {
   overflow-y: scroll;
-  -webkit-print-color-adjust: exact;
   margin: 0;
   height: 100%;
   background-color: #fdf2bc;
@@ -59,6 +58,7 @@ h2 a {
 
 /* BEGIN HEADER */
 header {
+  -webkit-print-color-adjust: exact;
   display: -webkit-flex;
   -webkit-order: 1;
   margin: 10px 0;
@@ -128,6 +128,7 @@ article {
 }
 
 article:last-child:after {
+  -webkit-print-color-adjust: exact;
   display: block;
   margin: auto;
   width: 20px;
@@ -212,10 +213,6 @@ footer a {
 }
 
 @media print {
-  html {
-    background: none;
-  }
-
   body {
     padding: 0;
   }
