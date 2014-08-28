@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <title>Morning Pulp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
 html {
   overflow-y: scroll;
@@ -20,8 +21,10 @@ html {
 
 body {
   display: -webkit-flex;
-  margin: 30px auto;
-  padding: 0 0 0 250px;
+  -webkit-flex-direction: column;
+  margin: 0 auto;
+  padding: 0 70px 0 320px;
+  max-width: 600px;
 }
 
 a {
@@ -35,6 +38,24 @@ a:hover {
   color: #cb544c;
 }
 
+h1 {
+  display: none;
+}
+
+h2 {
+  margin: 50px 0 0 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.9em;
+  font-weight: normal;
+  letter-spacing: .05em;
+  line-height: 100%;
+}
+
+h2 a {
+  color: #535d69;
+}
+
+/* BEGIN HEADER */
 header {
   display: -webkit-flex;
   -webkit-order: 1;
@@ -59,10 +80,41 @@ header a {
   text-indent: 0;
   text-transform: uppercase;
 }
+/* END HEADER */
 
+/* BEGIN NAVIGATION */
 nav {
-  display: none;
+  -webkit-order: 0;
 }
+
+.navigation {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-end;
+  margin: 0;
+  height: 50px;
+  list-style: none;
+}
+
+.navigation a {
+  display: block;
+  margin-left: 25px;
+  color: #cb544c;
+  font-family: Futura, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+
+.navigation a:hover {
+  color: #678fa5;
+}
+/* END NAVIGATION */
+
+/* BEGIN CONTENT */
+/* END CONTENT */
+
+/* BEGIN FOOTER */
+/* END FOOTER */
 
 @media screen and (max-width: 1000px) {
   html {
@@ -70,8 +122,7 @@ nav {
   }
 
   body {
-    margin: 30px 7% 0 32%;
-    padding: 0;
+    padding: 0 7% 0 32%;
   }
 }
 
@@ -83,9 +134,17 @@ nav {
   header a {
     font-size: 4em;
   }
+
+  .navigation {
+    -webkit-justify-content: space-between;
+  }
+
+  .navigation a {
+    margin: 0;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   html {
     background-image: linear-gradient(to bottom, #fdf2bc, #fdf2bc 50px, #f6cc7b 50px, #f6cc7b 100px, #535d69 100px, #535d69 150px, #678fa5 150px, #678fa5 200px, #cb544c 200px, #cb544c 250px, rgba(0,0,0,0) 250px);
     background-repeat: no-repeat;
@@ -93,12 +152,13 @@ nav {
 
   body {
     margin: 0 30px;
+    padding: 0;
   }
   
   header {
     -webkit-order: 1;
     display: block;
-    margin: 100px 0 100px 0;
+    margin: 50px 0 100px 0;
     background: none;
   }
 
@@ -125,5 +185,6 @@ nav {
       <li id="feed"><a href="#">Feed</a></li>
     </ul>
   </nav>
+  <h1>I&#8217;m sorry, Dave. I&#8217;m afraid I can&#8217;t do that.</h1>
 </body>
 </html>
