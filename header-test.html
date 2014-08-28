@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+html {
+  overflow-y: scroll;
+  -webkit-print-color-adjust: exact;
+  margin: 0;
+  height: 100%;
+  background-color: #fdf2bc;
+  background-image: linear-gradient(to right, #fdf2bc, #fdf2bc 5%, #f6cc7b 5%, #f6cc7b 10%, #535d69 10%, #535d69 15%, #678fa5 15%, #678fa5 20%, #cb544c 20%, #cb544c 25%, rgba(0,0,0,0) 25%);
+  background-repeat: repeat-y;
+  color: #535d69;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: none;
+}
+
+body {
+  display: -webkit-flex;
+  margin: 0 7% 0 32%;
+}
+
+a {
+  color: #678fa5;
+  text-decoration: none;
+  transition: .5s;
+  -webkit-transition: .5s;
+}
+
+a:hover {
+  color: #cb544c;
+}
+
+header {
+  display: -webkit-flex;
+  -webkit-order: 1;
+  margin: 30px 0;
+  width: 100%;
+  height: 140px;
+  background-image: url(http://morningpulp.com/jekyll/images/pow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header a {
+  display: block;
+  margin: auto;
+  width: auto;
+  background: none;
+  font-family: Futura-CondensedMedium, sans-serif;
+  font-size: 6em;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-indent: 0;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 400px) {
+  html {
+      background-image: linear-gradient(to bottom, #fdf2bc, #fdf2bc 50px, #f6cc7b 50px, #f6cc7b 100px, #535d69 100px, #535d69 150px, #678fa5 150px, #678fa5 200px, #cb544c 200px, #cb544c 250px, rgba(0,0,0,0) 250px);
+      background-repeat: no-repeat;
+  }
+
+  body {
+    -webkit-flex-direction: column;
+    margin: 0 30px;
+    padding: 0;
+  }
+
+  header {
+    -webkit-order: 1;
+    display: block;
+    margin: 100px 0 100px 0;
+    background: none;
+  }
+
+  header a {
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 50px;
+    background-image: url(http://morningpulp.com/jekyll/images/pow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header a {
+    font-size: 4em;
+  }
+}
+</style>
+</head>
+<body>
+  <header><a href="#">Morning Pulp</a></header>
+</body>
+</html>
