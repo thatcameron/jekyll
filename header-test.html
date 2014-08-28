@@ -138,6 +138,16 @@ article:last-child:after {
 /* END CONTENT */
 
 /* BEGIN FOOTER */
+footer {
+  -webkit-order: 3;
+  margin: 50px 0;
+  font-size: .7em;
+  text-align: center;
+}
+
+footer a {
+  color: #535d69;
+}
 /* END FOOTER */
 
 @media screen and (max-width: 1000px) {
@@ -198,6 +208,12 @@ article:last-child:after {
     text-indent: -9999px;
   }
 }
+
+@media print {
+  html {
+    background: none;
+  }
+}
 </style>
 </head>
 <body>
@@ -218,5 +234,6 @@ article:last-child:after {
       <p>This is Morning Pulp. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
   </section>
+  <footer><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Copyright &copy; 2014</a> <a href="/jekyll/colophon/" rel="author">Cameron Tracy</a></footer>
 </body>
 </html>
