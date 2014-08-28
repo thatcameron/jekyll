@@ -10,7 +10,7 @@ html {
   margin: 0;
   height: 100%;
   background-color: #fdf2bc;
-  background-image: linear-gradient(to right, #fdf2bc, #fdf2bc 5%, #f6cc7b 5%, #f6cc7b 10%, #535d69 10%, #535d69 15%, #678fa5 15%, #678fa5 20%, #cb544c 20%, #cb544c 25%, rgba(0,0,0,0) 25%);
+  background-image: linear-gradient(to right, #fdf2bc, #fdf2bc 50px, #f6cc7b 50px, #f6cc7b 100px, #535d69 100px, #535d69 150px, #678fa5 150px, #678fa5 200px, #cb544c 200px, #cb544c 250px, rgba(0,0,0,0) 250px);
   background-repeat: repeat-y;
   color: #535d69;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -20,7 +20,8 @@ html {
 
 body {
   display: -webkit-flex;
-  margin: 0 7% 0 32%;
+  margin: 30px auto;
+  padding: 0 0 0 250px;
 }
 
 a {
@@ -93,6 +94,18 @@ header a {
 @media screen and (max-width: 750px) {
   header a {
     font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    margin: 0;
+    background-image: linear-gradient(to right, #fdf2bc, #fdf2bc 5%, #f6cc7b 5%, #f6cc7b 10%, #535d69 10%, #535d69 15%, #678fa5 15%, #678fa5 20%, #cb544c 20%, #cb544c 25%, rgba(0,0,0,0) 25%);
+  }
+
+  body {
+    margin: 30px 7% 0 32%;
+    padding: 0;
   }
 }
 </style>
