@@ -127,7 +127,7 @@ footer a {
 }
 /* END FOOTER */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
   html {
     background-image: linear-gradient(to right, #fdf2bc, #fdf2bc 5%, #f6cc7b 5%, #f6cc7b 10%, #535d69 10%, #535d69 15%, #678fa5 15%, #678fa5 20%, #cb544c 20%, #cb544c 25%, rgba(0,0,0,0) 25%);
     background-repeat: repeat-y;
@@ -138,6 +138,7 @@ footer a {
   }
 
   header {
+    display: -webkit-flex;
     -webkit-order: 1;
     margin: 30px 0;
     width: 100%;
@@ -148,11 +149,13 @@ footer a {
   }
 
   header a {
+    display: inline;
+    margin: auto;
     width: auto;
-    margin: 0;
+    height: 140px;
     background: none;
     font-family: Futura-CondensedMedium, sans-serif;
-    font-size: 7em;
+    font-size: 4em;
     font-weight: normal;
     letter-spacing: -0.02em;
     text-align: center;
@@ -172,6 +175,12 @@ footer a {
 
   .navigation a {
     margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header a {
+    font-size: 6em;
   }
 }
 
