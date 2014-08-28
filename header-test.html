@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
 html {
   overflow-y: scroll;
@@ -58,11 +59,17 @@ header a {
   text-transform: uppercase;
 }
 
+/*@media screen and (max-width: 750px) {
+  header a {
+    font-size: 4em;
+  }
+}*/
+
 @media screen and (max-width: 500px) {
   html {
     background-color: #ff0000;
-      background-image: linear-gradient(to bottom, #fdf2bc, #fdf2bc 50px, #f6cc7b 50px, #f6cc7b 100px, #535d69 100px, #535d69 150px, #678fa5 150px, #678fa5 200px, #cb544c 200px, #cb544c 250px, rgba(0,0,0,0) 250px);
-      background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #fdf2bc, #fdf2bc 50px, #f6cc7b 50px, #f6cc7b 100px, #535d69 100px, #535d69 150px, #678fa5 150px, #678fa5 200px, #cb544c 200px, #cb544c 250px, rgba(0,0,0,0) 250px);
+    background-repeat: no-repeat;
   }
 
   body {
@@ -87,12 +94,6 @@ header a {
     background-position: center;
     background-repeat: no-repeat;
     text-indent: -9999px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  header a {
-    font-size: 4em;
   }
 }
 </style>
