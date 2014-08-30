@@ -125,6 +125,7 @@ nav {
 }
 
 time {
+  color: #535d69;
   font-size: .8em;
 }
 
@@ -225,14 +226,23 @@ footer a {
 
 @media print {
   body {
-    padding: 0;
+    padding: 0 100px;
   }
 
   nav {
     display: none;
   }
+
+  article {
+    font-size: .9em;
+  }
+
+  .footnotes {
+    font-size: .7em;
+  }
 }
 </style>
+<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
   <header><a href="#">Morning Pulp</a></header>
@@ -284,6 +294,6 @@ footer a {
       </ol>
     </article>
   </section>
-  <footer><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Copyright &copy; 2014</a> <a href="/jekyll/colophon/" rel="author">Cameron Tracy</a></footer>
+  <footer><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Copyright &copy; 2014</a> <a href="/jekyll/colophon/" rel="author">Cameron Tracy</a><br />Hosted on <a href="https://pages.github.com"><i class="fa fa-github"></i> GitHub Pages</a></footer>
 </body>
 </html>
