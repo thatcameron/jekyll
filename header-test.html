@@ -67,8 +67,7 @@ header {
   -webkit-print-color-adjust: exact;
   display: -webkit-flex;
   -webkit-order: 1;
-  margin: 10px 0;
-  width: 100%;
+  margin: 10px auto;
   height: 140px;
   background-image: url(http://morningpulp.com/jekyll/images/pow.svg);
   background-position: center;
@@ -76,16 +75,12 @@ header {
 }
 
 header a {
-  display: block;
   margin: auto;
-  width: auto;
-  background: none;
   font-family: Futura-CondensedMedium, sans-serif;
   font-size: 6em;
   font-weight: normal;
   letter-spacing: -0.02em;
   text-align: center;
-  text-indent: 0;
   text-transform: uppercase;
 }
 /* END HEADER */
@@ -203,21 +198,18 @@ footer a {
     margin: 0 30px;
     padding: 0;
   }
-  
+
   header {
     -webkit-order: 1;
     display: block;
-    margin: 50px 0 100px 0;
-    height: auto;
-    background: none;
+    margin: 50px auto 100px;
+    width: 60px;
+    height: 50px;
   }
 
   header a {
-    width: 60px;
+    display: block;
     height: 50px;
-    background-image: url(http://morningpulp.com/jekyll/images/pow.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     text-indent: -9999px;
   }
 }
