@@ -161,10 +161,6 @@ footer a {
 }
 
 @media screen and (max-width: 750px) {
-  header {
-    /*height: 140px;*/
-  }
-
   header a {
     font-size: 4em;
   }
@@ -191,14 +187,14 @@ footer a {
 
   header {
     -webkit-order: 1;
-    display: block;
+    /*display: block;*/
     margin: 50px auto 100px;
     width: 60px;
     height: 50px;
   }
 
   header a {
-    display: block;
+    /*display: block;*/
     height: 50px;
     text-indent: -9999px;
   }
