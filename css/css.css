@@ -62,9 +62,11 @@ header {
   background-image: url(http://morningpulp.com/jekyll/images/pow.svg);
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #0f0;
 }
 
 header a {
+  background-color: #f00;
   margin: auto;
   font-family: Futura-CondensedMedium, sans-serif;
   font-size: 6em;
