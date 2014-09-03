@@ -174,7 +174,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   html {
     background-image: linear-gradient(to bottom, #fdf2bc, #fdf2bc 50px, #f6cc7b 50px, #f6cc7b 100px, #535d69 100px, #535d69 150px, #678fa5 150px, #678fa5 200px, #cb544c 200px, #cb544c 250px, rgba(253, 242, 188, 0) 250px);
     background-repeat: no-repeat;
