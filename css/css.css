@@ -162,7 +162,7 @@ footer a {
 
 @media screen and (max-width: 750px) {
   header {
-    height: 140px;
+    /*height: 140px;*/
   }
 
   header a {
