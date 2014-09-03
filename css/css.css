@@ -187,15 +187,13 @@ footer a {
 
   header {
     -webkit-order: 1;
-    display: block;
     margin: 50px auto 100px;
     width: 60px;
     height: 50px;
   }
 
   header a {
-    display: block;
-    height: 50px;
+    /*height: 50px;*/
     text-indent: -9999px;
   }
 }
