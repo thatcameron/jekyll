@@ -91,7 +91,6 @@ nav {
 }
 
 .navigation a {
-  /*display: block;*/
   margin-left: 25px;
   color: #cb544c;
   font-family: Futura, sans-serif;
@@ -186,7 +185,6 @@ footer a {
   }
 
   header {
-    -webkit-order: 1;
     margin: 50px auto 100px;
     width: 60px;
     height: 50px;
