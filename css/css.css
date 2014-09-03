@@ -65,7 +65,7 @@ header {
 }
 
 header a {
-  margin: auto;
+  /*margin: auto;*/
   font-family: Futura-CondensedMedium, sans-serif;
   font-size: 6em;
   font-weight: normal;
