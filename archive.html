@@ -4,12 +4,8 @@ title: Archive
 ---
       <h2>{{ page.title }}</h2>
         {%for post in site.posts %}{% unless post.next %}<h3>{{ post.date | date: '%B %Y' }}</h3>
-          <ul class="this">
-        {% else %}
-          {% assign archiveMonthYear = post.date | date: '%B %Y' %}
-          {% assign archiveNextMonthYear = post.next.date | date: '%B %Y' %}
-          {% if archiveMonthYear != archiveNextMonthYear %}
-            </ul>
+          <ul class="this">{% else %}{% assign archiveMonthYear = post.date | date: '%B %Y' %}{% assign archiveNextMonthYear = post.next.date | date: '%B %Y' %}{% if archiveMonthYear != archiveNextMonthYear %}
+          </ul>
             <h3>{{ post.date | date: '%B %Y' }}</h3>
             <ul class="past">
           {% endif %}
