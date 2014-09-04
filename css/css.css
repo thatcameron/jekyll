@@ -130,6 +130,10 @@ article:last-child:after {
   content: "";
 }
 
+.archive {
+  list-style: none;
+}
+
 .footnotes {
   font-size: .8em;
   line-height: 130%;

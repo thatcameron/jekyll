@@ -4,9 +4,9 @@ title: Archive
 ---
       <h2>{{ page.title }}</h2>
         {%for post in site.posts %}{% unless post.next %}<h3>{{ post.date | date: '%B %Y' }}</h3>
-        <ul>{% else %}{% assign archiveMonthYear = post.date | date: '%B %Y' %}{% assign archiveNextMonthYear = post.next.date | date: '%B %Y' %}{% if archiveMonthYear != archiveNextMonthYear %}
+        <ul class="archive">{% else %}{% assign archiveMonthYear = post.date | date: '%B %Y' %}{% assign archiveNextMonthYear = post.next.date | date: '%B %Y' %}{% if archiveMonthYear != archiveNextMonthYear %}
         </ul>
         <h3>{{ post.date | date: '%B %Y' }}</h3>
-        <ul>{% endif %}{% endunless %}
+        <ul class="archive">{% endif %}{% endunless %}
           <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%d %b %Y" }}</time></li>
           {% endfor %}</ul>
