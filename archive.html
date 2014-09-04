@@ -3,4 +3,6 @@ layout: mp
 title: Archive
 ---
       <h2>Archive</h2>
-      <p>This is the archive.</p>
+      {% for post in site.posts %}
+        [ {{ post.title }} ]({{ post.url }}) {{ post.date | date_to_string }}
+      {% endfor %}
