@@ -9,4 +9,3 @@ permalink: pretty
 kramdown:
   input: GFM
 exclude: [.gitignore]
-gems: [archives]
