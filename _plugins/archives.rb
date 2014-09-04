@@ -13,7 +13,7 @@ module Jekyll
       @site = site
       @base = site.source
       # I simply write the archives.html file in the _site root
-      @dir = "/jekyll/"
+      @dir = "/"
       @name = "archives.html"
       
       self.process(@name)
