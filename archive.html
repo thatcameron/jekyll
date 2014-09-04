@@ -3,5 +3,5 @@ layout: mp
 title: Archive
 ---
       <h2>Archive</h2>
-      {% for post in site.posts %}<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <time>{{ post.date | date: "%B %d, %Y" }}</time></p>
+      {% for post in site.posts %}<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></p>
       {% endfor %}
