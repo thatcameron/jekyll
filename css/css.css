@@ -131,6 +131,7 @@ article:last-child:after {
 }
 
 .archive {
+  margin: 0;
   list-style: none;
 }
 
