@@ -8,6 +8,5 @@ baseurl: /jekyll
 permalink: pretty
 kramdown:
   input: GFM
-exclude: [
-  .gitignore
-]
+exclude: [.gitignore]
+gems: [archives]
