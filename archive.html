@@ -7,11 +7,11 @@ title: Archive
         {% unless post.next %}
           <ul class="this">
         {% else %}
-          {% capture month %}{{ post.date | date: '%M' }}{% endcapture %}
-          {% capture nmonth %}{{ post.next.date | date: '%M' }}{% endcapture %}
-          {% if year != nyear %}
+          {% assign archiveMonthYear = post.date | date: '%M %Y' %}
+          {% assign archiveNextMonthYear = post.date | date: '%M %Y' %}
+          {% if archiveMonthYear != archiveNextMonthYear %}
             </ul>
-            <h3>{{ post.date | date: '%M' }}</h3>
+            <h3>{{ post.date | date: '%M %Y' }}</h3>
             <ul class="past">
           {% endif %}
         {% endunless %}
