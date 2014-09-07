@@ -145,6 +145,7 @@ article:last-child:after {
 
 .archive li {
   margin: 5px 0;
+  padding-left: 30px;
 }
 
 .archive time {
