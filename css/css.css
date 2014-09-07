@@ -138,6 +138,10 @@ article:last-child:after {
   content: "";
 }
 
+input[type=search] {
+  border: 1px dotted #999;
+}
+
 .archive {
   padding-left: 30px;
   list-style: none;
