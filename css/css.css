@@ -143,6 +143,10 @@ article:last-child:after {
   list-style: none;
 }
 
+.archive time {
+  font-weight: bold;
+}
+
 .footnotes {
   font-size: .8em;
   line-height: 130%;
