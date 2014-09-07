@@ -6,7 +6,6 @@ url: http://morningpulp.com
 # Build settings
 baseurl: /jekyll
 permalink: pretty
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]
+kramdown:
+  input: GFM
 exclude: [.gitignore]
