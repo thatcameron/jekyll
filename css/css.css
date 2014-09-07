@@ -80,8 +80,7 @@ header a {
   letter-spacing: -0.02em;
   text-align: center;
   text-transform: uppercase;
-
-  color: #ff0000;
+  color: hsla(201,26%,53%, 70%);
 }
 /* END HEADER */
 
