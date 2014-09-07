@@ -10,7 +10,7 @@
   <section class="content">
     <article>
       <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
-      <time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %d, %Y" }}</time>
+      <time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %-d, %Y" }}</time>
       {{ content }}    </article>
   </section>
 {% include footer.html %}
