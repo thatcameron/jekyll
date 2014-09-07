@@ -138,10 +138,6 @@ article:last-child:after {
   content: "";
 }
 
-.search-button {
-  font-size: .5em;
-}
-
 .archive {
   padding-left: 30px;
   list-style: none;
