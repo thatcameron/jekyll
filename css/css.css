@@ -143,6 +143,7 @@ input[type=search] {
   background-color: #fdf2bc;
   -webkit-appearance: none;
   font-size: .4em;
+  bottom-margin: 30px;
 }
 
 .archive {
