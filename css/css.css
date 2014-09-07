@@ -139,7 +139,9 @@ article:last-child:after {
 }
 
 input[type=search] {
-  border: 1px dotted #999;
+  background-color: #fdf2bc;
+  border: 1px solid #f6cc7b;
+  font-size: 1em;
 }
 
 .archive {
