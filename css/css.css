@@ -139,13 +139,12 @@ article:last-child:after {
 }
 
 .archive {
-  /*padding: 0;*/
+  padding-left: 30px;
   list-style: none;
 }
 
 .archive li {
   margin: 5px 0;
-  padding-left: 30px;
 }
 
 .archive time {
