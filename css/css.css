@@ -82,6 +82,10 @@ header a {
   text-transform: uppercase;
   color: hsla(201,26%,53%,.9);
 }
+
+header a:hover {
+  color: hsla(4,55%,55%,.9);
+}
 /* END HEADER */
 
 /* BEGIN NAVIGATION */
