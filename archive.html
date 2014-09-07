@@ -10,6 +10,6 @@ title: Archive
         <h3>{{ post.date | date: '%B %Y' }}</h3>
         <ul class="archive">
           {% endif %}{% endunless %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%-d %b %Y" }}</time></li>
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></li>
           {% endfor %}
         </ul>
