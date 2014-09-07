@@ -143,6 +143,10 @@ article:last-child:after {
   list-style: none;
 }
 
+.archive li {
+  margin: 10px 0;
+}
+
 .archive time {
   display: inline-block;
   width: 40px;
