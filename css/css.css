@@ -142,8 +142,8 @@ input[type=search] {
   border: 1px solid #f6cc7b;
   background-color: #fdf2bc;
   -webkit-appearance: none;
-  font-size: .4em;
-  width: 300px;
+  font-size: .5em;
+  width: 100%;
 }
 
 .archive {
