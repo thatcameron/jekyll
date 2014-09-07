@@ -141,7 +141,8 @@ article:last-child:after {
 input[type=search] {
   background-color: #fdf2bc;
   border: 1px solid #f6cc7b;
-  font-size: .6em;
+  border-radius: 50%;
+  font-size: .5em;
 }
 
 .archive {
