@@ -3,7 +3,7 @@ layout: mp
 title: Archive
 ---
     <article>
-      <h2>{{ page.title }}</h2>{% for post in site.posts %}{% unless post.next %}
+      <form><h2>{{ page.title }}</h2></form>{% for post in site.posts %}{% unless post.next %}
         <h3>{{ post.date | date: '%B %Y' }}</h3>
         <ul class="archive">{% else %}{% assign archiveMonthYear = post.date | date: '%B %Y' %}{% assign archiveNextMonthYear = post.next.date | date: '%B %Y' %}{% if archiveMonthYear != archiveNextMonthYear %}
         </ul>
