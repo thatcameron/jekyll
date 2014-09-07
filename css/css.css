@@ -144,6 +144,9 @@ article:last-child:after {
 }
 
 .archive time {
+  display: inline-block;
+  width: 30px;
+  font-size: 1em;
   font-weight: bold;
 }
 
