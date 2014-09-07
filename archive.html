@@ -3,11 +3,17 @@ layout: mp
 title: Archive
 ---
       <h2>{{ page.title }}</h2>
-        {% for post in site.posts %}
+      {% for post in site.posts %}
 
-        <h3>{{ post.date | date: '%B %Y' }}</h3>
-        <ul class="archive">
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%d %b %Y" }}</time></li>
+      {% assign archiveMonthYear = post.date | date: '%B %Y' %}{% assign archiveNextMonthYear = post.next.date | date: '%B %Y' %}{% if archiveMonthYear != archiveNextMonthYear %}
 
-        {% endfor %}
-        </ul>
+      </ul>
+      <h3>{{ post.date | date: '%B %Y' }}</h3>
+      <ul class="archive">
+
+      {% endif %}
+
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:"%d %b %Y" }}</time></li>
+
+      {% endfor %}
+      </ul>
