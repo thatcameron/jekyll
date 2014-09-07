@@ -139,6 +139,9 @@ article:last-child:after {
 }
 
 input[type=search] {
+  border: 1px solid #f6cc7b;
+  background-color: #fdf2bc;
+  -webkit-appearance: none;
   font-size: .4em;
 }
 
