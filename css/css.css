@@ -139,6 +139,7 @@ article:last-child:after {
 }
 
 .archive {
+  margin-bottom: 10px;
   padding-left: 30px;
   list-style: none;
 }
