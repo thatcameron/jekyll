@@ -1,7 +1,7 @@
 ---
 title: "Eighth Post"
 author: Cameron Tracy
-date: 2014-08-26 22:40:29 -0700
+date: 2014-09-05 22:40:29 -0700
 layout: post
 published: true
 ---
