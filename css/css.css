@@ -84,7 +84,7 @@ header a {
 }
 
 header a:hover {
-  color: hsla(4,55%,55%,.9);
+  color: hsla(4,55%,55%,.8);
 }
 /* END HEADER */
 
