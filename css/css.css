@@ -138,9 +138,7 @@ article:last-child:after {
   content: "";
 }
 
-input[type=search] {
-  background-color: #fdf2bc;
-  border: 1px solid #f6cc7b;
+.search-button {
   font-size: .5em;
 }
 
