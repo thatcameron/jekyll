@@ -7,8 +7,6 @@ title: Archive
         <ul class="archive">{% else %}{% assign archiveMonthYear = post.date | date: '%B %Y' %}{% assign archiveNextMonthYear = post.next.date | date: '%B %Y' %}{% if archiveMonthYear != archiveNextMonthYear %}
         </ul>
         <h3>{{ post.date | date: '%B %Y' }}</h3>
-        <ul class="archive">
-          {% endif %}{% endunless %}
-          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B" }}</time></li>
-        {% endfor %}
+        <ul class="archive">{% endif %}{% endunless %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>&nbsp;&nbsp;<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B" }}</time></li>{% endfor %}
         </ul>
