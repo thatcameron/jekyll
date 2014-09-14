@@ -180,7 +180,9 @@ footer a {
 }
 
 #purple h2 {
-  font-size: .4em;
+  font-size: .8em;
+  font-weight: bold;
+  text-shadow: 0 0 8px #f6cc7b;
 }
 /* END MODIFIERS */
 
