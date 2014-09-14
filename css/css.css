@@ -180,12 +180,8 @@ footer a {
 }
 
 #purple h2 a {
-  color: transparent;
-  text-shadow: 0 0 5px rgb(83,93,105);
-}
-
-#purpl h2 a:hover {
-  color: #cb544c;
+  color:  rgba(83,93,105,0);
+  text-shadow: 0 0 5px #535d69;
 }
 /* END MODIFIERS */
 
