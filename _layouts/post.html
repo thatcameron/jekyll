@@ -8,7 +8,7 @@
 <body>
 {% include header.html %}
   <section class="content">
-    <article{% if page.id %} id="{{ page.id }}"{% endif %}>
+    <article{% if page.modifier %} id="{{ page.modifier }}"{% endif %}>
       <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
       <time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %-d, %Y" }}</time>
       {{ content }}    </article>
