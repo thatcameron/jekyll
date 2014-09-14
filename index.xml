@@ -7,8 +7,7 @@
   <id>{{ site.url }}{{ site.baseurl }}/atom.xml</id>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <rights>Copyright © {% assign copyYear = '2014' %}{% assign curYear = site.time | date: "%Y" %}{{ copyYear }}{% if copyYear != curYear %}-{{ curYear }}{% endif %} {{ site.author }}</rights>
-  {% for post in site.posts limit:10 %}
-  <entry>
+  {% for post in site.posts limit:10 %}<entry>
     <title>{{ post.title | xml_escape }}</title>
     <link rel="alternate" type="text/html" href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" />
     <id>tag:{{ site.url | remove: "http://" }},{{ post.date | date: "%Y-%m-%d" }}:{{ site.baseurl }}{{ post.url }}</id>
@@ -21,6 +20,5 @@
     <content>
       {{ post.content | xml_escape }}
     </content>
-  </entry>
-  {% endfor %}
+  </entry>{% endfor %}
 </feed>
