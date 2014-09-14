@@ -178,6 +178,10 @@ footer a {
 #purple {
   color: #663399;
 }
+
+#purple h2 {
+  font-size: .4em;
+}
 /* END MODIFIERS */
 
 @media screen and (max-width: 1000px) {
