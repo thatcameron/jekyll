@@ -17,7 +17,7 @@
       <name>{{ site.author }}</name>
       <uri>{{ site.url }}</uri>
     </author>
-    <content>
+    <content type="html">
       {{ post.content | xml_escape }}
     </content>
   </entry>{% endfor %}
