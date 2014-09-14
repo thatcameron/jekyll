@@ -20,5 +20,5 @@
     <content>
       {{ post.content | xml_escape }}
     </content>
-  </entry>
-{% endfor %}</feed>
+  </entry>{% endfor %}
+</feed>
