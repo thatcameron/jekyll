@@ -179,12 +179,12 @@ footer a {
   color: #663399;
 }
 
-h2#purple a {
+#purple h2 a {
   color:  rgba(83,93,105,0);
   text-shadow: 0 0 5px #535d69;
 }
 
-h2#purple a:hover {
+#purple h2 a:hover {
   color: #cb544c;
 }
 /* END MODIFIERS */
