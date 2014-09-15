@@ -13,7 +13,9 @@
       <time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %-d, %Y" }}</time>
       {{ content }}    </article>
     {% if page.next or page.previous %}
-    Pagination
+    <ul class="pagination">
+      <li>Previous</li>
+    </ul>
     {% endif %}
   </section>
 {% include footer.html %}
