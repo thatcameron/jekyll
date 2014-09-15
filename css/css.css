@@ -163,9 +163,6 @@ article {
   line-height: 130%;
 }
 
-
-
-
 .pagination {
   display: -webkit-flex;
   -webkit-align-items: center;
@@ -173,6 +170,7 @@ article {
   margin: 0 0 20px 0;
   padding: 0;
   list-style: none;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .pagination li {
