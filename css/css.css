@@ -169,7 +169,7 @@ article {
 .pagination {
   display: -webkit-flex;
   -webkit-align-items: center;
-  -webkit-justify-content: space-around;
+  -webkit-justify-content: space-between;
   margin: 0 0 20px 0;
   padding: 0;
   list-style: none;
