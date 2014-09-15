@@ -175,7 +175,7 @@ article {
 }
 
 .pagination li {
-  margin: 0 0 20px 0;
+  margin-bottom: 15px;
   width: 45%;
 }
 
