@@ -119,17 +119,7 @@ nav {
   -webkit-order: 2;
 }
 
-time {
-  color: #535d69;
-  font-size: .8em;
-}
-
-article {
-  font-size: 1.1em;
-  line-height: 150%;
-}
-
-article:last-child:after {
+.content:after {
   -webkit-print-color-adjust: exact;
   display: block;
   margin: auto;
@@ -139,6 +129,16 @@ article:last-child:after {
   background-position: center;
   background-repeat: no-repeat;
   content: "";
+}
+
+time {
+  color: #535d69;
+  font-size: .8em;
+}
+
+article {
+  font-size: 1.1em;
+  line-height: 150%;
 }
 
 .archive {
