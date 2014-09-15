@@ -177,9 +177,11 @@ article {
 
 .pagination li {
   width: 45%;
+  background-color: #f00;
 }
 
 .prev {
+  
 }
 
 .next {
