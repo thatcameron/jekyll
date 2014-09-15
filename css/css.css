@@ -231,6 +231,7 @@ footer a {
 
   .pagination li {
     width: 100%;
+    min-height: 50px;
   }
 }
 
