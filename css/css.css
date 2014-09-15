@@ -82,7 +82,7 @@ header a {
 }
 
 header a:hover {
-  color: rgba(203,84,76,.8);
+  color: rgba(203,84,76,.6);
 }
 /* END HEADER */
 
