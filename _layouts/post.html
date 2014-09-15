@@ -13,8 +13,9 @@
       <time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %-d, %Y" }}</time>
       {{ content }}    </article>
     {% if page.next or page.previous %}
-    <ul class="pagination">
-      <li>Previous</li>
+    <ul class="pagination">{% if page.previous %}
+      <li class="prev"><a href="#">&larr; Previous</a></li>{% elseif page.next %}
+      <li class="next"><a href="#">Next Article &rarr;</a></li>{% endif %}
     </ul>
     {% endif %}
   </section>
