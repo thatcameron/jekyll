@@ -162,6 +162,29 @@ article:last-child:after {
   font-size: .8em;
   line-height: 130%;
 }
+
+
+
+
+.pagination {
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination li {
+  width: 40%;
+}
+
+.prev {
+}
+
+.next {
+  text-align: right;
+}
 /* END CONTENT */
 
 /* BEGIN FOOTER */
