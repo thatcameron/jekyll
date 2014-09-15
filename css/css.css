@@ -80,6 +80,10 @@ header a {
   text-align: center;
   text-transform: uppercase;
 }
+
+header a:hover {
+  color: rgba(203,84,76,.8);
+}
 /* END HEADER */
 
 /* BEGIN NAVIGATION */
