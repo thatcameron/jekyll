@@ -228,6 +228,10 @@ footer a {
   .pagination {
     -webkit-flex-direction: column;
   }
+
+  .pagination li {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
