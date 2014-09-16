@@ -50,6 +50,7 @@ h3 {
   font-weight: normal;
   letter-spacing: .05em;
   line-height: 100%;
+  text-transform: uppercase;
 }
 
 hr {
@@ -134,6 +135,7 @@ nav {
 time {
   color: #535d69;
   font-size: .8em;
+  text-transform: uppercase;
 }
 
 article {
