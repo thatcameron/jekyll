@@ -8,6 +8,7 @@ url: http://morningpulp.com
 baseurl: /jekyll
 permalink: pretty
 paginate: 5
-kramdown:
-  input: GFM
+markdown: rdiscount
+rdiscount:
+  extensions: ['smart']
 exclude: [.gitignore]
