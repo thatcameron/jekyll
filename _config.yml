@@ -10,5 +10,5 @@ permalink: pretty
 paginate: 5
 markdown: rdiscount
 rdiscount:
-  extensions: ['smart']
+  extensions: [smart]
 exclude: [.gitignore]
