@@ -9,11 +9,11 @@
 {% include header.html %}
   <section class="content">
     <article{% if page.modifier %} id="{{ page.modifier }}"{% endif %}>
-      <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
+      <h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title | markdownify }}</a></h2>
       <time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %-d, %Y" }}</time>
       {{ content }}    </article>
     {% if page.previous or page.next %}<ul class="pagination">
-      {% if page.previous %}<li class="prev"><a href="{{ site.baseurl }}{{ page.previous.url }}">&larr; {{ page.previous.title }}</a></li>{% endif %}{% if page.next %}<li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }} &rarr;</a></li>{% endif %}
+      {% if page.previous %}<li class="prev"><a href="{{ site.baseurl }}{{ page.previous.url }}">&larr; {{ page.previous.title | markdownify }}</a></li>{% endif %}{% if page.next %}<li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title | markdownify }} &rarr;</a></li>{% endif %}
     </ul>{% endif %}
   </section>
 {% include footer.html %}
