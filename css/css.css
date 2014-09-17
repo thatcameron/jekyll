@@ -1,9 +1,8 @@
-.wf-loading h2, .wf-loading .pagination {
-  font-family: "serif";
+.wf-loading h2 {
   visibility: hidden;
 }
 
-.wf-active h2, .wf-active .pagination {
+.wf-active h2 {
   visibility: visible;
 }
 
@@ -181,7 +180,7 @@ article {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: "adelle", "HelveticaNeue-Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.1em;
 }
 
