@@ -1,12 +1,3 @@
-.wf-loading h2 {
-  font-family: "serif";
-  visibility: hidden;
-}
-
-.wf-active h2 {
-  visibility: visible;
-}
-
 html {
   margin: 0;
   height: 100%;
@@ -38,6 +29,15 @@ a:hover {
 
 h1 {
   display: none;
+}
+
+.wf-loading h2 {
+  font-family: "serif";
+  visibility: hidden;
+}
+
+.wf-active h2 {
+  visibility: visible;
 }
 
 h2 {
