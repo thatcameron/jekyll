@@ -1,5 +1,5 @@
 ---
-title: "When I Wake up in the Morning"
+title: "When I Wake up in the Morning Again"
 author: Cameron Tracy
 date: 2014-08-19 03:41:29 -0700
 layout: post
