@@ -31,12 +31,12 @@ h1 {
   display: none;
 }
 
-.wf-loading h2 {
+.wf-loading {
   font-family: "serif";
   visibility: hidden;
 }
 
-.wf-active h2 {
+.wf-active {
   visibility: visible;
 }
 
