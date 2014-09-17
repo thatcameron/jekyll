@@ -1,3 +1,12 @@
+.wf-loading h2, .wf-active .pagination {
+  font-family: "serif";
+  visibility: hidden;
+}
+
+.wf-active h2, .wf-active .pagination {
+  visibility: visible;
+}
+
 html {
   margin: 0;
   height: 100%;
@@ -30,15 +39,6 @@ a:hover {
 h1 {
   display: none;
 }
-
-/*.wf-loading {
-  font-family: "serif";
-  visibility: hidden;
-}
-
-.wf-active {
-  visibility: visible;
-}*/
 
 h2 {
   margin: 50px 0 0 0;
