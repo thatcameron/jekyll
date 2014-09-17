@@ -31,14 +31,14 @@ h1 {
   display: none;
 }
 
-.wf-loading {
+/*.wf-loading {
   font-family: "serif";
   visibility: hidden;
 }
 
 .wf-active {
   visibility: visible;
-}
+}*/
 
 h2 {
   margin: 50px 0 0 0;
