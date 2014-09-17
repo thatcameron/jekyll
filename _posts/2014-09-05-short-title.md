@@ -1,5 +1,5 @@
 ---
-title: "Eighth Post"
+title: "Short Title"
 author: Cameron Tracy
 date: 2014-09-05 22:40:29 -0700
 layout: post
