@@ -143,6 +143,7 @@ nav {
 time {
   color: #535d69;
   font-size: .8em;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
