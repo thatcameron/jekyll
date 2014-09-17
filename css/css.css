@@ -1,4 +1,4 @@
-.wf-loading h2, .wf-active .pagination {
+.wf-loading h2, .wf-loading .pagination {
   font-family: "serif";
   visibility: hidden;
 }
