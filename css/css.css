@@ -140,6 +140,10 @@ nav {
   font-size: 1.5em;
 }
 
+.link > span {
+  font-family: Helvetica;
+}
+
 time {
   color: #535d69;
   font-size: .8em;
