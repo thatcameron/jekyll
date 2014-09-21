@@ -11,5 +11,8 @@
 {{ content }}
   </section>
 {% include footer.html %}
+
+{{ site.time | date_to_xmlschema }}
+{{ 'now' | date_to_xmlschema }}
 </body>
 </html>
