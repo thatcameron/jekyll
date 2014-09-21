@@ -16,10 +16,10 @@
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
-      <name>{{ site.author }}</name>
-      <uri>{{ site.url }}</uri>
+      <name>{{ site.author }}</name>{% if site.author != "Morning Pulp Treasury Department" %}
+      <uri>{{ site.url }}</uri>{% endif %}
     </author>
-    <content type="html">
+    <content>
       {{ post.content | xml_escape }}
     </content>
   </entry>{% endfor %}
