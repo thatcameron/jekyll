@@ -200,7 +200,8 @@ article {
 
 .timelink {
   color: #f6cc7b;
-  font-size: .8em;
+  font-size: .7em;
+  font-weight: normal;
   text-decoration: italic;
 }
 /* END CONTENT */
