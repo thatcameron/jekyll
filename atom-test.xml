@@ -19,7 +19,7 @@
       <uri>{{ site.url }}</uri>
     </author>
     <content type="html">
-      <![CDATA[{{ post.content }}]]>
+      {{ post.content | xml_escape }}
     </content>
   </entry>{% endfor %}
 </feed>
