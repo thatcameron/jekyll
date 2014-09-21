@@ -9,7 +9,7 @@
 {% include header.html %}
   <section class="content">
     <article{% if page.modifier %} id="{{ page.modifier }}"{% endif %}>
-      {% if post.link %}<h2 class="link"><a href="{{ page.link }}">{{ post.title }}</a> <span><a href="{{ site.baseurl }}{{ page.url }}" title="Permalink to ‘{{ page.title }}’">&#8734;</a></span></h2>{% else %}<h2><a href="{{ site.baseurl }}{{ page.url }}" title="Permalink to ‘{{ page.title }}’">{{ post.title }}</a></h2>{% endif %}
+      {% if post.link %}<h2 class="link"><a href="{{ page.link }}">{{ page.title }}</a> <span><a href="{{ site.baseurl }}{{ page.url }}" title="Permalink to ‘{{ page.title }}’">&#8734;</a></span></h2>{% else %}<h2><a href="{{ site.baseurl }}{{ page.url }}" title="Permalink to ‘{{ page.title }}’">{{ post.title }}</a></h2>{% endif %}
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
       {{ content }}    </article>{% if page.link %}{% else %}
     {% if page.previous or page.next %}<ul class="pagination">
