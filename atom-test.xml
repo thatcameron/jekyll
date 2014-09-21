@@ -19,7 +19,7 @@
       <uri>{{ site.url }}</uri>
     </author>
     <content type="html">
-      {{ post.content }}
+      <![CDATA[{{ post.content }}]]>
     </content>
   </entry>{% endfor %}
 </feed>
