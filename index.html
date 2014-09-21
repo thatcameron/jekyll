@@ -2,7 +2,7 @@
 layout: mp
 title: Morning Pulp
 ---
-    {% for post in paginator.posts %}<article{% if post.modifier %} id="{{ post.modifier }}"{% endif %}>
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+    {% for post in paginator.posts %}<article{% if post.modifier %} id="{{ post.modifier }}"{% endif %}>{% if post.link %}
+      <h2 class="link"><a href="{{ post.link }}">{{ post.title }}</a> <span><a href="{{ site.baseurl }}{{ post.url }}" title="Permalink to ‘{{ post.title }}’">&#8734;</a></span></h2>{% else %}<h2><a href="{{ site.baseurl }}{{ post.url }}" title="Permalink to ‘{{ post.title }}’">{{ post.title }}</a></h2>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>{% endif %}
       {{ post.content }}    </article>{% endfor %}
