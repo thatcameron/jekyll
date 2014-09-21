@@ -197,6 +197,12 @@ article {
 .next {
   text-align: right;
 }
+
+.timelink {
+  color: #f6cc7b;
+  font-size: .8em;
+  text-decoration: italic;
+}
 /* END CONTENT */
 
 /* BEGIN FOOTER */
