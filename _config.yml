@@ -5,7 +5,6 @@ author: Cameron Tracy
 url: http://morningpulp.com
 
 # Build settings
-timezone: "America/Phoenix"
 baseurl: /jekyll
 permalink: pretty
 paginate: 5
