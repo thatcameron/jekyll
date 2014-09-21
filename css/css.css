@@ -136,6 +136,10 @@ nav {
   content: "";
 }
 
+.link {
+  font-size: 1.5em;
+}
+
 time {
   color: #535d69;
   font-size: .8em;
