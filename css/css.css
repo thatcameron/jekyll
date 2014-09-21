@@ -137,7 +137,11 @@ nav {
 }
 
 .link {
-  font-size: 1.5em;
+  font-size: 1.4em;
+}
+
+.link span {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
 time {
