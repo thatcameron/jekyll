@@ -274,12 +274,12 @@ footer a {
 }
 
 @media print {
-  body {
-    padding: 0 100px;
+  nav, .pagination {
+    display: none;
   }
 
-  nav {
-    display: none;
+  body {
+    padding: 0 100px;
   }
 
   article {
