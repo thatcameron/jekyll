@@ -1,11 +1,3 @@
-.wf-loading h2 {
-  visibility: hidden;
-}
-
-.wf-active h2 {
-  visibility: visible;
-}
-
 html {
   margin: 0;
   height: 100%;
