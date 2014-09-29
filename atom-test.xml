@@ -21,8 +21,7 @@
 <uri>{{ site.url }}</uri>{% endif %}
 </author>
 <content>
-{{ post.content | xml_escape }}
-</content>
+{{ post.content | xml_escape }}</content>
 </entry>
 {% endfor %}
 </feed>
