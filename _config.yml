@@ -7,7 +7,7 @@ url: http://morningpulp.com
 # Build settings
 baseurl: /jekyll
 permalink: /:year/:month/:title
+timezone: US/Arizona
 paginate: 5
 markdown: kramdown
 exclude: [.gitignore]
-timezone: US/Arizona
