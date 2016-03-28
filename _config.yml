@@ -6,9 +6,7 @@ url: http://morningpulp.com
 
 # Build settings
 baseurl: /jekyll
-permalink: pretty
+permalink: /:year/:month/:title
 paginate: 5
-markdown: rdiscount
-rdiscount:
-  extensions: [smart]
+markdown: kramdown
 exclude: [.gitignore]
