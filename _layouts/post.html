@@ -7,7 +7,7 @@
 </head>
 <body>
 {% include header.html %}
-  <section class="content">
+  <section class="content" id="content">
     <article{% if page.modifier %} id="{{ page.modifier }}"{% endif %}>
       {% if page.link %}<h2 class="link"><a href="{{ page.link }}">{{ page.title }}</a> <span><a href="{{ site.baseurl }}{{ page.url }}" title="Permalink to ‘{{ page.title }}’">&#8734;</a></span></h2>{% else %}<h2><a href="{{ site.baseurl }}{{ page.url }}" title="Permalink to ‘{{ page.title }}’">{{ page.title }}</a></h2>{% endif %}
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>

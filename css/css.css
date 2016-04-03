@@ -82,6 +82,14 @@ header a {
 header a:hover {
   color: rgba(203,84,76,.6);
 }
+
+#skiptocontent {
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+  width: 1px;
+  height: 1px;
+}
 /* END HEADER */
 
 /* BEGIN NAVIGATION */
