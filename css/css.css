@@ -292,3 +292,8 @@ footer a {
     font-size: .7em;
   }
 }
+
+header {background-color: #fff}
+nav {background-color: #ccc}
+.content {background-color: #999}
+footer {background-color: #666}
