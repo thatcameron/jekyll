@@ -12,9 +12,9 @@
       {% if page.previous %}<li class="prev"><a href="{{ site.baseurl }}{{ page.previous.url }}">&larr; {{ page.previous.title }}</a></li>{% endif %}{% if page.next %}<li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }} &rarr;</a></li>{% endif %}
     </ul>{% endif %}{% endif %}
 
-    {% if page.categories %}
-      {% assign category = page.categories[0] %}
-      {% assign posts = site.categories[category] %}
+    {% if post.category %}
+      {% assign category = post.category[0] %}
+      {% assign posts = site.category[category] %}
       {% for post in posts %}
         {% if post.url == page.url %}
           {% assign post_index0 = forloop.index0 %}
