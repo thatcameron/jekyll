@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>{{ site.title }}{% if site.title == page.title %}{% elsif page.layout == "post" %}: {{ page.title }}{% else %} {{ page.title }}{% endif %}</title>
+  <title>{{ site.title }}{% if site.title == page.title %}{% else %}{% if page.layout == "post" %}:{% endif %} {{ page.title }}{% endif %}</title>
 {% include head.html %}
 </head>
 <body>
