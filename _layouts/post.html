@@ -18,8 +18,18 @@
         {% assign post_index1 = forloop.index %}
       {% endif %}
     {% endfor %}
-    {{ post_index0 }}
-    {{ post_index1 }}
+
+    {% for post in site.categories.photos %}
+      {% if post_index0 == forloop.index %}
+        {% assign next_post = post.url %}
+      {% endif %}
+      {% if post_index1 == forloop.index0 %}
+        {% assign prev_post = post.url %}
+      {% endif %}
+    {% endfor %}
+
+    {{ next_post }}
+    {{ prev_post }}
 
   </section>
 {% include footer.html %}
