@@ -6,7 +6,7 @@ title: Archive
       <h2>{{ page.title }}</h2>{% for post in site.posts %}{% assign archiveMonthYear = post.date | date: "%B %Y" %}{% assign archiveNextMonthYear = post.next.date | date: "%B %Y" %}{% if archiveMonthYear != archiveNextMonthYear %}{% if forloop.index != 1 %}
       </ul>{% endif %}
       <h3>{{ post.date | date: "%B %Y" }}</h3>
-      <ul class="archive">{% endif %}{% unless post.categories == "link" %}
+      <ul class="archive">{% endif %}{% unless post.category == "link" %}
         <li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d" }}</time> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>{% endunless %}{% endfor %}
       </ul>
     </article>
