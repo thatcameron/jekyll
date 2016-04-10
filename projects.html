@@ -5,7 +5,7 @@ title: Projects
     <article>
       <h2>Projects</h2>
       <p>These are the projects.</p>
-      <ul>{%for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}</ul>
+      {%for post in site.posts %}
+        <a href="{{ post.url }}">{{ post.title }}</a><br/>
+      {% endfor %}
     </article>
