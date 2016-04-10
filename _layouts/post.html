@@ -11,29 +11,6 @@
     {% if page.previous or page.next %}<ul class="pagination">
       {% if page.previous %}<li class="prev"><a href="{{ site.baseurl }}{{ page.previous.url }}">&larr; {{ page.previous.title }}</a></li>{% endif %}{% if page.next %}<li class="next"><a href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }} &rarr;</a></li>{% endif %}
     </ul>{% endif %}{% endif %}
-
-    {% for post in site.posts %}
-    {% unless post.category %}
-      {% if post.url == page.url %}
-        {% assign post_index0 = forloop.index0 %}
-        {% assign post_index1 = forloop.index %}
-      {% endif %}
-    {% endunless %}
-    {% endfor %}
-
-    {% for post in site.posts %}
-    {% unless post.category %}
-      {% if post_index0 == forloop.index %}
-        {% assign next_post = post.url %}
-      {% endif %}
-      {% if post_index1 == forloop.index0 %}
-        {% assign prev_post = post.url %}
-      {% endif %}
-    {% endunless %}
-    {% endfor %}
-
-    {{ prev_post }}<br/>{{ next_post }}
-
   </section>
 {% include footer.html %}
 </body>
